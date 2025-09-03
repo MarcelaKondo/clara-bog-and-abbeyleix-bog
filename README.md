@@ -1,12 +1,35 @@
-# PROJECT_NAME
+# clara-bog-and-abbeyleix-bog
 
-Short description of your project (what it does, why it exists).
+Here’s a polished README-ready version you can paste in:
 
-## Features
-- Reproducible Python environment
-- Clear repo structure for code, notebooks, and data
-- GitHub Actions CI (lint) ready
-- Git LFS set up for large geospatial files (GeoTIFFs, shapefiles, etc.)
+```markdown
+## Objectives
+
+Ireland’s raised bogs have been heavily altered by drainage and peat extraction, and many are now under restoration. To support decision-making, we need robust evidence of where vegetation is recovering and how management interacts with climate variability. This study compares two contrasting raised bogs— Clara Bog (SAC) and Abbeyleix Bog (community-managed)—to estimate long-term vegetation change and recent land-cover dynamics using harmonised satellite data.
+
+**Research question:** Can the combined effects of climate variability and site management on vegetation status and land cover in Irish raised bogs be separated and described?
+
+### Specific goals
+
+**O1 — Quantify long-term vegetation trends (1985–2025).**  
+Estimate winter and summer NDVI trends for both sites using Mann–Kendall and Theil–Sen:
+- Report effect sizes (Sen’s slope, NDVI yr⁻¹), Kendall’s τ, and statistical significance by season and site.
+
+**O2 — Compare seasons and sites; identify contributing factors.**  
+- Contrast greening trends between winter vs summer and Abbeyleix vs Clara.  
+- Correlate variations with hydrology, management interventions, and climatic drivers, documenting partial effects and interactions.
+
+**O3 — Map spatial dynamics and land-cover change (2017–2025).**  
+- Data: Sentinel-2 Level-2A (10 m) composites cloud-masked via the Scene Classification Layer.  
+- Predictors: surface reflectance bands + indices (NDVI, NDMI, NDWI, NBR, EVI).  
+- Models: supervised classifiers— Random Forest (primary), with Gradient Tree Boost** and SVM for comparison; training on 2017–2019 samples.  
+- Outputs: five-class maps (Water, Raised Bog, Other Peat, Forest/Scrub, Other) for 2017, 2020, and 2024/25; reprojected to ITM (EPSG:2157).  
+- Validation: stratified 20% hold-out; report overall accuracy (OA), class-specific producer’s/user’s accuracy (PA/UA), and Cohen’s κ.  
+- Change analysis: compute class area and transition matrices between dates; summarise by ecotope (central, sub-central, marginal, flush/soak) to distinguish dome recovery from edge processes.
+
+**Outcome:** An integrated remote-sensing assessment of peatland dynamics and restoration progress to inform future conservation actions.
+```
+
 
 ## Repo structure
 ```
