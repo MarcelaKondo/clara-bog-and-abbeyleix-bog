@@ -1,0 +1,42 @@
+# Byte-compiled / cache / venv
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tooling
+.mypy_cache/
+.pytype/
+pytest_cache/
+.coverage
+dist/
+build/
+
+# Editors
+.vscode/
+.idea/
+
+# Data outputs (keep small samples under version control if needed)
+data/processed/
+
+# Logs & temp
+*.log
+tmp/
+temp/
+
+# GIS (let Git LFS handle large binaries; this ignore is conservative)
+*.aux.xml
+*.lock
+*.tif.aux.xml
+*.ovr
+*.sidecar
